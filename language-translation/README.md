@@ -24,11 +24,11 @@ https://www.floydhub.com:8000/sxcUfB4ugHG28yEkgJrzyH/notebooks/dlnd_image_classi
 
 3. Enter the folder for the image classification project:
 
-        cd image-classification
+        cd language_translation
 
 4. Initiate a Floyd project:
 
-        floyd init dlnd_image_classification
+        floyd init dlnd_language_translation
 
 5. Run the project:
 
@@ -52,4 +52,4 @@ Alternatively, If you already stoped the experiment, you can still download the 
 
 (where ID is the "RUN ID" displayed in the terminal when you run the project; if you lost it you can also find it in the ["Experiments" section on floyd.com](https://www.floydhub.com/experiments))
     
-Just run the command above, download `dlnd_image_classification.ipynb` and replace your local version with the newly downloaded one.
+Just run the command above, download `dlnd_language_translation.ipynb` and replace your local version with the newly downloaded one.
