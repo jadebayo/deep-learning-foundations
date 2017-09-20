@@ -1,6 +1,4 @@
 ## Running the Udacity Deep Learning Foundations language translation project on floydhub.com
-https://www.floydhub.com:8000/sxcUfB4ugHG28yEkgJrzyH/notebooks/dlnd_image_classification.ipynb
-
 
 1. Create an account on [floydhub.com](https://www.floydhub.com) (don't forget to confirm your email). You will automatically receive 100 free GPU hours. 
 
@@ -18,10 +16,6 @@ https://www.floydhub.com:8000/sxcUfB4ugHG28yEkgJrzyH/notebooks/dlnd_image_classi
 
 2. Clone this repository:
 
-        git clone https://github.com/ludwiktrammer/deep-learning.git
-
-    Note: There are couple minor differences between this repository and the original Udacity repository. You can read about them [in README](https://github.com/ludwiktrammer/deep-learning/tree/master/image-classification#how-is-this-repository-different-from-the-original). To follow this instructions you need to use this repository.
-
 3. Enter the folder for the language translation project:
 
         cd language_translation
@@ -32,9 +26,9 @@ https://www.floydhub.com:8000/sxcUfB4ugHG28yEkgJrzyH/notebooks/dlnd_image_classi
 
 5. Run the project:
 
-        floyd run --gpu --env tensorflow --mode jupyter
+        floyd run --gpu --env tensorflow-1.2 --mode jupyter
 
-    It will be run on a machine with GPU (`--gpu`), using a Tenserflow environment (`--env tensorflow`), as a Jupyter notebook (`--mode jupyter`), with Floyd's built-in cifar-10 dataset  available (`--data diSgciLH4WA7HpcHNasP9j`).
+    It will be run on a machine with GPU (`--gpu`), using a Tenserflow environment (`--env tensorflow-1.2`), as a Jupyter notebook (`--mode jupyter`)
     
 6. Wait for the Jupyter notebook to become available and then access the URL displayed in the terminal (described as "path to jupyter notebook"). You will see the notebook.
 
@@ -44,7 +38,7 @@ https://www.floydhub.com:8000/sxcUfB4ugHG28yEkgJrzyH/notebooks/dlnd_image_classi
  
     (where ID is the "RUN ID" displayed in the terminal when you run the project; if you lost it you can also find it in the ["Experiments" section on floyd.com](https://www.floydhub.com/experiments))
     
-**Important:** When you run a project it will always start from scratch (i.e. from the state present *locally* on your computer). If you made changes in the remote jupiter notebook during a previous run, the changes will **not** be present in subsequent runs. To make them permanent you need to add the changes to your local project folder. When running the notebook you can download them directly from Jupyter - *File / Download / Notebook*. After downloading it, just replace your local `dlnd_image_classification.ipynb` file with the newly downloaded one.
+**Important:** When you run a project it will always start from scratch (i.e. from the state present *locally* on your computer). If you made changes in the remote jupiter notebook during a previous run, the changes will **not** be present in subsequent runs. To make them permanent you need to add the changes to your local project folder. When running the notebook you can download them directly from Jupyter - *File / Download / Notebook*. After downloading it, just replace your local `dlnd_language_translation.ipynb` file with the newly downloaded one.
 
 Alternatively, If you already stoped the experiment, you can still download the file using the `floyd output` command:
 
