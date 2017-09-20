@@ -1,4 +1,4 @@
-## Running the Udacity Deep Learning Foundations tface generation project on floydhub.com
+## Running the Udacity Deep Learning Foundations face generation project on floydhub.com
 
 1. Create an account on [floydhub.com](https://www.floydhub.com) (don't forget to confirm your email). You will automatically receive 100 free GPU hours. 
 
@@ -16,23 +16,19 @@
 
 2. Clone this repository:
 
-        git clone https://github.com/jadebayo/deep-learning-foundations.git
-
-    Note: There are couple minor differences between this repository and the original Udacity repository. You can read about them [in README](https://github.com/ludwiktrammer/deep-learning/tree/master/image-classification#how-is-this-repository-different-from-the-original). To follow this instructions you need to use this repository.
-
-3. Enter the folder for the image classification project:
+3. Enter the folder for the face generation project:
 
         cd face_generation
 
 4. Initiate a Floyd project:
 
-        floyd init dlnd_facet_generation
+        floyd init dlnd_face_generation
 
 5. Run the project:
 
-        floyd run --gpu --env tensorflow --mode jupyter 
+        floyd run --gpu --env tensorflow-1.2 --mode jupyter
 
-    It will be run on a machine with GPU (`--gpu`), using a Tenserflow environment (`--env tensorflow`), as a Jupyter notebook (`--mode jupyter`).
+    It will be run on a machine with GPU (`--gpu`), using a Tenserflow environment (`--env tensorflow-1.2`), as a Jupyter notebook (`--mode jupyter`)
     
 6. Wait for the Jupyter notebook to become available and then access the URL displayed in the terminal (described as "path to jupyter notebook"). You will see the notebook.
 
@@ -42,7 +38,7 @@
  
     (where ID is the "RUN ID" displayed in the terminal when you run the project; if you lost it you can also find it in the ["Experiments" section on floyd.com](https://www.floydhub.com/experiments))
     
-**Important:** When you run a project it will always start from scratch (i.e. from the state present *locally* on your computer). If you made changes in the remote jupiter notebook during a previous run, the changes will **not** be present in subsequent runs. To make them permanent you need to add the changes to your local project folder. When running the notebook you can download them directly from Jupyter - *File / Download / Notebook*. After downloading it, just replace your local `dlnd_tv_script_generation.ipynb` file with the newly downloaded one.
+**Important:** When you run a project it will always start from scratch (i.e. from the state present *locally* on your computer). If you made changes in the remote jupiter notebook during a previous run, the changes will **not** be present in subsequent runs. To make them permanent you need to add the changes to your local project folder. When running the notebook you can download them directly from Jupyter - *File / Download / Notebook*. After downloading it, just replace your local `dlnd_face_generation.ipynb` file with the newly downloaded one.
 
 Alternatively, If you already stoped the experiment, you can still download the file using the `floyd output` command:
 
@@ -50,4 +46,4 @@ Alternatively, If you already stoped the experiment, you can still download the 
 
 (where ID is the "RUN ID" displayed in the terminal when you run the project; if you lost it you can also find it in the ["Experiments" section on floyd.com](https://www.floydhub.com/experiments))
     
-Just run the command above, download `dlnd_tv_script_generation.ipynb` and replace your local version with the newly downloaded one.
+Just run the command above, download `dlnd_face_generation.ipynb` and replace your local version with the newly downloaded one.
